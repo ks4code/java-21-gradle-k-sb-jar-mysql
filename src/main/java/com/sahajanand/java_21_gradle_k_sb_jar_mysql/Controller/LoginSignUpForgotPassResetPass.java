@@ -28,7 +28,7 @@ public class LoginSignUpForgotPassResetPass {
 
   @GetMapping("/get-user-details/{userId}")
   public ResponseEntity<User> getUserDetails(@PathVariable String userId) {
-    Utils.systemOutPrint("userId *****", userId);
+    //    Utils.systemOutPrint("userId *****", userId);
 
     User user = users.get(userId);
     Utils.systemOutPrint("user *****", user);
